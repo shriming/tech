@@ -7,7 +7,7 @@
 * [Хостинг и облака](#hosting)
 
 <a name="frontend"></a>
-## Клиент
+### Клиент
 
 * [БЭМ](https://ru.bem.info/) — главный ресурс с исчерпывающей информацией по БЭМ (рекомендую использовать кнопку ["Быстрый старт"](https://ru.bem.info/tutorials/quick-start-static)). А также прогулятся по всем разделам ресурса (начать лучше с [методологии](https://ru.bem.info/method/) и [FAQ](https://ru.bem.info/faq/)).
   * [БЭМ-компоненты](https://github.com/bem/bem-components/blob/v2.3.0/README.ru.md) — тут кратко собрано все из чего состоит БЭМ. Собрано большое количество ссылок на внешние ресурсы об инструментах, которые упоминиаются в лекциях ([ссылка](https://github.com/bem/bem-components/blob/v2.3.0/README.ru.md#Инструменты)).
@@ -16,7 +16,7 @@
 * [ENB-сборщик](https://ru.bem.info/tools/bem/enb-bem/) — писать можно на любых технологиях с любыми препроцессорами, а потом все собирать с ENB.
 
 <a name="backend"></a>
-## Сервер
+### Сервер
 
 * [Sails](http://sailsjs.org/) и [EXPRESS](http://expressjs.com/) — 2 основых nodejs-фреймворка, которые используются во всех примерах для full-stack БЭМ.
   * Sails базируется на Express и предлагает более удобную реализацию в рамках MVC подхода и организацию файлов внутри проекта (по личному опыту).
@@ -30,7 +30,7 @@
 * [Passport](http://passportjs.org/) — для  реализации авторизации на сайте.
 
 <a name="hosting"></a>
-## Хостинг
+### Хостинг и облака
 
 * [Node-hosting](https://github.com/nodejs/node-v0.x-archive/wiki/Node-Hosting) — сводная таблица с кратким описанием хостингов, поддерживающих nodejs и websockets из коробки. Из бесплатных стоит выделить:
   * [Heroku](http://heroku.com/)
