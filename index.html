@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Технологии для БЭМ-стека : Технологии, которые можно использовать для приложения на полном БЭМ-стеке">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Технологии для БЭМ-стека</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/shriming/tech">View on GitHub</a>
+
+          <h1 id="project_title">Технологии для БЭМ-стека</h1>
+          <h2 id="project_tagline">Технологии, которые можно использовать для приложения на полном БЭМ-стеке</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/shriming/tech/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/shriming/tech/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="Содержание" class="anchor" href="#%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Содержание</h2>
+
+<ul>
+<li><a href="#frontend">На клиенте</a></li>
+<li><a href="#backend">На сервере</a></li>
+<li><a href="#hosting">Хостинг и облака</a></li>
+</ul>
+
+<p><a name="frontend"></a></p>
+
+<h3>
+<a id="Клиент" class="anchor" href="#%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82" aria-hidden="true"><span class="octicon octicon-link"></span></a>Клиент</h3>
+
+<ul>
+<li>
+<a href="https://ru.bem.info/">БЭМ</a> — главный ресурс с исчерпывающей информацией по БЭМ (рекомендую использовать кнопку <a href="https://ru.bem.info/tutorials/quick-start-static">"Быстрый старт"</a>). А также прогулятся по всем разделам ресурса (начать лучше с <a href="https://ru.bem.info/method/">методологии</a> и <a href="https://ru.bem.info/faq/">FAQ</a>).
+
+<ul>
+<li>
+<a href="https://github.com/bem/bem-components/blob/v2.3.0/README.ru.md">БЭМ-компоненты</a> — тут кратко собрано все из чего состоит БЭМ. Собрано большое количество ссылок на внешние ресурсы об инструментах, которые упоминиаются в лекциях (<a href="https://github.com/bem/bem-components/blob/v2.3.0/README.ru.md#%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B">ссылка</a>).</li>
+<li>
+<a href="https://github.com/yuriMalakhov/do-it-yourself-workshop">Мастер-класс по БЭМ</a> — удобный способ выполнения заданий по БЭМ, необходимых для начального усвоения методологии. Стоит также посмотреть <a href="https://events.yandex.ru/lib/talks/2185/">лекцию</a>. Кроме того, есть <a href="https://github.com/dab/bemup-workshop-vagrant/blob/master/README.ru.md">инструкции</a> для пользователей windows.</li>
+<li>Список очень полезных лекций стоит посмотреть <a href="https://events.yandex.ru/lib/talks/?audience=frontenderyi&amp;tech=bem">тут</a>. Например, про полный стек <a href="https://events.yandex.ru/lib/talks/1922/">БЭМ-технологий</a>.</li>
+</ul>
+</li>
+<li>
+<a href="https://ru.bem.info/tools/bem/enb-bem/">ENB-сборщик</a> — писать можно на любых технологиях с любыми препроцессорами, а потом все собирать с ENB.</li>
+</ul>
+
+<p><a name="backend"></a></p>
+
+<h3>
+<a id="Сервер" class="anchor" href="#%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80" aria-hidden="true"><span class="octicon octicon-link"></span></a>Сервер</h3>
+
+<ul>
+<li>
+<a href="http://sailsjs.org/">Sails</a> и <a href="http://expressjs.com/">EXPRESS</a> — 2 основых nodejs-фреймворка, которые используются во всех примерах для full-stack БЭМ.
+
+<ul>
+<li>Sails базируется на Express и предлагает более удобную реализацию в рамках MVC подхода и организацию файлов внутри проекта (по личному опыту).</li>
+<li>Sails предлагает удобное подключение всевозможных адаптеров для баз данных:
+описание модели в JSON (+ автоматические миграции)
+  =&gt; подключение адаптера
+  =&gt; использование любой БД
+  =&gt; <a href="http://sailsjs.org/documentation/reference/blueprint-api?q=blueprint-routes">REST API</a> из коробки без доп. настроек.</li>
+<li><a href="https://ru.bem.info/built-with-b/#sails-bem-project-stub">Генератор для связки БЭМ и Sails</a></li>
+<li><a href="https://ru.bem.info/built-with-b/#bnsf">Фреймворк для одностраничных приложений</a></li>
+</ul>
+</li>
+<li>
+<a href="http://passportjs.org/">Passport</a> — для  реализации авторизации на сайте.</li>
+</ul>
+
+<p><a name="hosting"></a></p>
+
+<h3>
+<a id="Хостинг-и-облака" class="anchor" href="#%D0%A5%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3-%D0%B8-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>Хостинг и облака</h3>
+
+<ul>
+<li>
+<a href="https://github.com/nodejs/node-v0.x-archive/wiki/Node-Hosting">Node-hosting</a> — сводная таблица с кратким описанием хостингов, поддерживающих nodejs и websockets из коробки. Из бесплатных стоит выделить:
+
+<ul>
+<li>
+<a href="http://heroku.com/">Heroku</a>
+
+<ul>
+<li>Плюсы: интеграция с GitHub, большое количество add-ons (базы данных, мониторинг, и тд.), удобный deploy и доступ к приложению из командной строки.</li>
+<li>Минусы: если приложение не используется, то "засыпает" через 30 минут и достаточно долго просыпается потом. Можно обойти с помощью <a href="http://www.host-tracker.com/">HostTracker</a>, если настроить проверку приложения чаще чем в 30 минут. Кроме того, если выходить за рамки бесплатных услуг, то все стоит достаточно дорого.</li>
+</ul>
+</li>
+<li>
+<a href="http://qtcloudservices.com/">Qt Cloud Services</a> — есть интеграция с GitHub, приятный интерфейс. Приложение не засыпает, поддержка MongoDB.</li>
+<li><a href="https://www.openshift.com/">OpenShift</a></li>
+</ul>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Технологии для БЭМ-стека maintained by <a href="https://github.com/shriming">shriming</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
