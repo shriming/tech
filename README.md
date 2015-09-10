@@ -22,9 +22,9 @@
   * Sails базируется на Express и предлагает более удобную реализацию в рамках MVC подхода и организацию файлов внутри проекта (по личному опыту).
   * Sails предлагает удобное подключение всевозможных адаптеров для баз данных:
     описание модели в JSON (+ автоматические миграции)
-      -> подключение адаптера
-      -> использование любой БД
-      -> [REST API](http://sailsjs.org/documentation/reference/blueprint-api?q=blueprint-routes) из коробки без доп. настроек.
+      => подключение адаптера
+      => использование любой БД
+      => [REST API](http://sailsjs.org/documentation/reference/blueprint-api?q=blueprint-routes) из коробки без доп. настроек.
   * [Генератор для связки БЭМ и Sails](https://ru.bem.info/built-with-b/#sails-bem-project-stub)
   * [Фреймворк для одностраничных приложений](https://ru.bem.info/built-with-b/#bnsf)
 * [Passport](http://passportjs.org/) — для  реализации авторизации на сайте.
